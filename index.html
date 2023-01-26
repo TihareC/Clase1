@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea clase 1</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#presentacion">Presentación</a>
+            <a href="#mascotas">Mascotas</a>
+            <a href="#formulario">Formulario</a>
+            <a href="#bootcamp">Bootcamp</a>
+        </nav>
+    </header>
+    <main>
+        <section id="presentacion">
+            <h2>Presentación</h2>
+            <p>Mi nombre es Tihare Contreras, tengo 36 años. Soy TENS. Me gustan mucho los animales, tengo tres gatos, desde pequeña me gusta dibujar, uso mi Instagram para publicar mi arte. Me gusta el anime, los doramas, y me encanta viajar y hacer trekking.</p>
+            <img src="./assets/tarea/yo.jpg" alt="" width="200">
+        </section>
+
+        <section id="mascotas">
+            <article>
+                <h2>Mis Mascotas</h2>
+                <span>
+                <img src="./assets/tarea/chihiro.jpg" alt="" width="100">
+                <img src="./assets/tarea/mabel.jpg" alt="" width="100">
+                <img src="./assets/tarea/oliver.jpg" alt="" width="100">
+                </span>
+            </article>
+            <article>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Raza</th>
+                            <th>Edad</th>
+                            <th>Color</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Chihiro</td>
+                            <td>DPC</td>
+                            <td>8 años</td>
+                            <td>Tabby</td>
+                        </tr>
+                        <tr>
+                            <td>Mabel</td>
+                            <td>DPL</td>
+                            <td>9 años</td>
+                            <td>Tabby blanco</td>
+                        </tr>
+                        <tr>
+                            <td>Oliver</td>
+                            <td>DPL</td>
+                            <td>9 años</td>
+                            <td>Negro</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>  
+                <div>
+                    <span>¿Te gustan los gatos?</span>
+                    <br>
+                    <input id="si" value="si" type="radio" name="respuesta">
+                    <label for="si">Sí</label>
+                    <input id="no" value="no" type="radio" name="respuesta">
+                    <label for="no">No</label>
+                </div>          
+            </article>
+        </section>
+
+        <section id="formulario">
+            <h2>Envía tu información de contacto</h2>
+            <form>
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input id="nombre" placeholder="Ingrese nombre" type="text" minlength="2">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" placeholder="Ingrese apellido" minlength="2">
+                    <label for="edad">Edad</label>
+                    <input type="number" id="edad" min="0" max="99">
+                </div>
+                <div>
+                    <label for="telefono">Teléfono</label>
+                    <input type="number" id="telefono" placeholder="Ingrese teléfono">
+                    <label for="correo">Correo</label>
+                    <input type="email" id="email" placeholder="Ingrese correo">
+                </div>
+                <div>
+                    <input type="file" id="archivos">
+                </div>
+                <div>
+                    <input type="submit" id="submit">
+                </div>
+            </form>
+        </section>
+        <section id="bootcamp">
+            <h2>Bootcamp</h2>
+            <span>¿Qué espero de este Bootcamp?</span>
+            <div>
+                <select id="aprender" name="BootCamp">
+                    <option value="obt">Obtener nuevos conocimentos</option>
+                    <option value="gust">Que me guste</option>
+                    <option value="trb">Cambio de área laboral</option>
+                </select>                
+            </div>
+        </section>
+    </main>
+</body>
+
+<br>
+
+<footer>
+    <nav>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14888.960362849677!2d-58.996303245807646!3d-62.19477109608636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbc73fabbad5b1e5d%3A0xce57670015e3af7f!2sBase%20Presidente%20Eduardo%20Frei%20Montalva%2C%20Ant%C3%A1rtida!5e0!3m2!1ses-419!2scl!4v1674422799824!5m2!1ses-419!2scl" width="500" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </nav>
+</footer>
+</html>
